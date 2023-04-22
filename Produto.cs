@@ -12,6 +12,19 @@ namespace exercicioClasses4
     {
       return Preco * Quantidade;
     }
+    public void AdicionarProdutos(int quantidade)
+    {
+
+      Quantidade = Quantidade + quantidade;
+
+    }
+    public void RemoverProdutos(int quantidade)
+    {
+
+      Quantidade = Quantidade - quantidade;
+
+    }
+
     public override string ToString()
     {
       return Nome
@@ -19,7 +32,7 @@ namespace exercicioClasses4
       + Preco.ToString("F2", CultureInfo.InvariantCulture)
       + ", "
       + Quantidade
-      + " uniades, Total: $ "
+      + " unidades, Total: $ "
       + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
     }
   }
